@@ -1,0 +1,179 @@
+@font-face {
+    font-family: "Cabinet Bold";
+    src: url(fonts/CabinetGrotesk-Bold.otf);
+}
+
+@font-face {
+    font-family: "Cabinet Medium";
+    src: url(fonts/CabinetGrotesk-Medium.otf);
+}
+
+:root {
+    --verde-solara: #438332;
+    --azul-solara: #2f2d73;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    height: 165px;
+}
+
+header .container-grid {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 70px;
+
+}
+
+header img {
+    width: 100px;
+
+}
+
+.menu a {
+    font-family: "Cabinet Medium";
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    transition: 500ms ease;
+    text-decoration: underline transparent;
+    transition: text-decoration 500ms ease;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: var(--verde-solara);
+
+}
+
+header {
+    color: white;
+    /* Cor do texto */
+    padding: 20px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Centraliza o texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+}
+
+.texto {
+    max-width: 40%;
+}
+
+.texto h2 {
+    font-size: 32px;
+    font-family: "Cabinet bold";
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.texto p {
+    width: 80%;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.6;
+
+}
+
+.texto {
+    max-width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    color: #999;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #5c9ded;
+    outline: none;
+}
+
+.phone-section {
+    display: flex;
+    gap: 10px;
+}
+
+.ddd-wrapper {
+    flex: 1;
+}
+
+.telefone-wrapper {
+    flex: 2;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3b3b8b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #28285a;
+}
+
+#contato {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
