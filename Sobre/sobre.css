@@ -47,6 +47,11 @@ header .container-grid {
 
 }
 
+.menu span {
+    color: var(--verde-solara);
+    text-decoration: underline;
+}
+
 header img {
     width: 100px;
 
@@ -74,4 +79,83 @@ header {
     padding: 20px; /* Espaçamento interno */
     text-align: center; /* Centraliza o texto */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* outra seção*/
+.conteudo{
+    margin-top: 100px;
+}
+
+img {
+    width: 100%;
+}
+
+img.asset {
+    width: 10%;
+}
+
+#sobre p {
+    font-family: "Montserrat";
+    line-height: 150%;
+    text-align: left;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+#sobre p b {
+    color: var(--azul-solara);
+}
+
+.conteudo {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+/* Mvv*/
+
+#mvv {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#mvv h1{
+    font-family:"Cabinet" ;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--azul-solara);
+    margin-bottom: 75px;
+}
+
+#mvv h2{
+    font-family: "montserrat";
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--azul-solara);
+    margin-bottom: 10px;
+}
+
+#mvv {
+    font-family: "Montserrat";
+    font-size: 22px;
+    line-height: 150%;
+}
+
+.missao {
+    padding-bottom: 45px;
+}
+
+.visao {
+    padding-bottom: 45px;
+}
+
+.valores{
+    padding-bottom: 45px;
+}
+
+#mvv p {
+    width: 920px;
 }
