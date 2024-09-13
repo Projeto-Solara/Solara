@@ -47,6 +47,11 @@ header .container-grid {
 
 }
 
+.menu span {
+    color: var(--verde-solara);
+    text-decoration: underline;
+}
+
 header img {
     width: 100px;
 
@@ -122,16 +127,35 @@ img.asset {
     font-size: 50px;
     font-weight: bold;
     color: var(--azul-solara);
+    margin-bottom: 75px;
 }
 
 #mvv h2{
     font-family: "montserrat";
     font-size: 30px;
     font-weight: 500;
+    color: var(--azul-solara);
+    margin-bottom: 10px;
 }
 
 #mvv {
     font-family: "Montserrat";
     font-size: 22px;
     line-height: 150%;
+}
+
+.missao {
+    padding-bottom: 45px;
+}
+
+.visao {
+    padding-bottom: 45px;
+}
+
+.valores{
+    padding-bottom: 45px;
+}
+
+#mvv p {
+    width: 920px;
 }
