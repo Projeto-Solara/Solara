@@ -75,14 +75,23 @@ header img {
 }
 
 header {
-    color: white; /* Cor do texto */
-    padding: 20px; /* Espaçamento interno */
-    text-align: center; /* Centraliza o texto */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    color: white;
+    /* Cor do texto */
+    padding: 20px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Centraliza o texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    background-color: white;
+}
+
+body {
+    background-color: #F2F2F2;
 }
 
 /* outra seção*/
-.conteudo{
+.conteudo {
     margin-top: 100px;
 }
 
@@ -122,15 +131,15 @@ img.asset {
     margin-top: 100px;
 }
 
-#mvv h1{
-    font-family:"Cabinet" ;
+#mvv h1 {
+    font-family: "Cabinet";
     font-size: 50px;
     font-weight: bold;
     color: var(--azul-solara);
     margin-bottom: 75px;
 }
 
-#mvv h2{
+#mvv h2 {
     font-family: "montserrat";
     font-size: 30px;
     font-weight: 500;
@@ -146,16 +155,166 @@ img.asset {
 
 .missao {
     padding-bottom: 45px;
+    background-image: url(img/Group\ 82.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 300px;
+    background-size: 200px;
 }
 
 .visao {
     padding-bottom: 45px;
+    background-image: url(img/Group\ 85.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 300px;
+    background-size: 200px;
 }
 
-.valores{
+.valores {
     padding-bottom: 45px;
+    background-image: url(img/Vector.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 300px;
+    background-size: 200px;
 }
 
 #mvv p {
     width: 920px;
+}
+
+#mvv b {
+    color: var(--azul-solara);
+
+}
+
+
+
+/* FOOTER */
+footer {
+
+    background-color: var(--azul-solara);
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.conteudo {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    border-top: 2px solid white;
+    padding-top: 50px;
+    border-bottom: 2px solid white;
+    padding-bottom: 50px;
+    
+}
+
+.conteudo img {
+    height: 35%;
+    width: 35%;
+}
+
+/*telefone*/
+
+.telefone {
+    display: flex;
+    width: 250px;
+    align-items: center;
+   
+}
+
+.telefone p {
+    font-family: "Montserrat";
+    color: white;
+}
+
+.telefone img {
+    height: 65px;
+    width: 65px;
+    padding-right: 20px;
+}
+
+/*gmail*/
+
+.gmail {
+    display: flex;
+    width: 250px;
+    align-items: center;
+
+}
+
+.gmail p {
+    font-family: "Montserrat";
+    color: white;
+}
+
+.gmail img {
+    height: 65px;
+    width: 65px;
+    padding-right: 20px;
+}
+
+/*Social media*/
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-media p {
+    font-family: "Montserrat";
+    color: white;
+    width: 300px;
+}
+
+.social-media img {
+    height: 40px;
+}
+
+.linha-cima {
+    display: flex;
+    padding-bottom: 70px;
+}
+
+.menu footer {
+    margin-top: 100px;
+}
+
+.links footer {
+    margin-top: 100px;
+    display: flex;
+
+}
+
+.menu-no-footer {
+    margin-top: 130px;
+}
+
+.menu-footer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.cop {
+    padding-left: 160px;
+}
+
+.menu-footer a {
+    font-family: "Montserrat";
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.menu-footer p {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 12px;
 }
