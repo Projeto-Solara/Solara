@@ -84,3 +84,61 @@ header {
 .banner img {
     width: 100%;
 }
+
+#Sobre {
+    height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#Sobre h2{
+    font-family: Cabinet Bold;
+    font-size: 50px;
+    color: var(--azul-solara);
+}
+
+#Sobre p{
+    font-family: Montserrat;
+    font-size: 22px;
+    width: 600px;
+}
+
+#Sobre p b{
+    color: var(--azul-solara);
+}
+
+#Produtos img{
+    width: 70%;
+}
+
+#Produtos{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 70px;
+}
+
+#Beneficios p{
+    font-family: Montserrat;
+    font-size: 22px;
+}
+
+
+#Beneficios p b {
+    color: var(--azul-solara);
+}
+
+#Beneficios {
+    display: flex;
+    flex-direction: row;
+
+    height: 300px;
+}
+
+.primeiro-topico p,.ultimo-topico p{
+    width: 800px;
+
+    margin-bottom: 20px;
+}
