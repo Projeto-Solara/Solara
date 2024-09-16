@@ -11,7 +11,6 @@
 :root {
     --verde-solara: #438332;
     --azul-solara: #2f2d73;
-
 }
 
 * {
@@ -26,8 +25,13 @@
     margin: 0 auto;
 }
 
+body {
+    background-color: #f2f2f2;
+}
+
 header {
     height: 165px;
+    background-color: white;
 }
 
 header .container-grid {
@@ -85,7 +89,10 @@ header {
 .texto h2 {
     font-size: 32px;
     font-family: "Cabinet bold";
-    margin-bottom: 10px;
+
+    font-weight: 400;
+    margin-bottom: 15px;
+
     color: #000;
 }
 
@@ -93,10 +100,11 @@ header {
     width: 80%;
     font-family: "Montserrat";
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     color: #000000;
-    line-height: 1.6;
+    line-height: 1.7;
 
+    margin-bottom: 70px;
 }
 
 .texto {
@@ -110,20 +118,28 @@ form {
 
 label {
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     color: #333;
 }
+
+input[name="telefone"],
+input[name="ddd"] {
+    margin-top: 8px;
+}
+
 
 input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
+
     padding: 10px;
     margin-bottom: 20px;
+
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-size: 14px;
+
 }
 
 input[type="text"]::placeholder,
@@ -158,22 +174,83 @@ textarea {
 
 button {
     width: 100%;
+
+
     padding: 12px;
-    background-color: #3b3b8b;
+    background-color: var(--azul-solara);
     color: white;
+
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+
     font-size: 16px;
+    font-family: "Cabinet Bold";
     cursor: pointer;
+    transition: 500ms ease;
 }
 
 button:hover {
-    background-color: #28285a;
+    background-color: #24244F;
+    font-size: 18px;
+
 }
 
 #contato {
+    height: 600px;
     padding-top: 100px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+}
+
+.formulario {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 18px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: "Montserrat";
+    font-weight: light;
+    font-size: 16px;
+
+}
+
+.info svg {
+    height: 24px;
+    margin-bottom: 8px;
+    color: var(--azul-solara);
+}
+
+.info h2 {
+    font-size: 24px;
+    margin-top: 48px;
+    margin-right: 48px;
+    color: var(--azul-solara);
+
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+.info a {
+    text-decoration: none;
+    margin-left: 10px;
+
+    font-family: "Cabinet Medium";
+    color: #000;
+    font-size: 16px;
+}
+
+
+.numero,
+.email,
+.horario {
+    display: flex;
+    margin: 8px;
 }
