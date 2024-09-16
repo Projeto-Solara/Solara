@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "Cabinet Bold";
+    src: url(fonts/CabinetGrotesk_Complete\ \(1\)/.otf);
+}
+
+@font-face {
+    font-family: "Cabinet Medium";
+    src: url(fonts/Montserrat/static/Montserrat-Medium.ttf);
+}
+
+:root {
+    --verde-solara: #438332;
+    --azul-solara: #2f2d73;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    height: 165px;
+}
+
+header .container-grid {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 70px;
+
+}
+
+header img {
+    width: 100px;
+
+}
+
+.menu a {
+    font-family: "Cabinet";
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    transition: 500ms ease;
+    text-decoration: underline transparent;
+    transition: text-decoration 500ms ease;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: var(--verde-solara);
+
+}
+
+header {
+    color: white; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.conteudo-banner img {
+    width: 100%;}
+   
+body.card {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+
+#beneficios-cards{
+    display: block
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    
+}
+
+
+#beneficios-cards{
+font-family: "CabinetGrotesk bold";
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 0;
+    text-align: center}
+
+.card h2 {
+    font-family: "CabinetGrotesk bold";
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 0;
+    color: var(--verde-solara);
+}
+.card h3 {
+    font-family: "CabinetGrotesk bold";
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 0;
+    color: var(--azul-solara);
+    /* font-family: cab; */
+}
+
+
+.card p{
+    font-family: "montserrat";
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+#listabeneficios p {
+    font-family: "Montserrat";
+    font-size: 22px;
+    font-weight: 500;
+    background-color: red;
+    text-align: right;
+}
+
+#listabeneficios  {
+    background-color: red;
+    margin: 50;
+     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
