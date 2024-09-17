@@ -5,10 +5,6 @@
 
 }
 
-@font-face {
-    font-family: "Montserrat";
-    src: url(fonts/Montserrat-VariableFont_wght.ttf);
-}
 
 :root {
     --verde-solara: #438332;
@@ -20,6 +16,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
 }
 
 .container-grid {
@@ -89,144 +89,79 @@ header {
     font-size: 3rem;
 }
 
-.paineis, .tipos-placa, .uso, .parcelas {
+
+
+h1 {
     text-align: center;
-    margin: 30px 20px;
+    font-size: 2.5rem;
+    margin-top: 20px;
 }
 
-.placas {
+.tipos-placa-solar {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.placas-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .placa {
-    background-color: #ecf0f1;
+    background-color: white;
     padding: 20px;
-    width: 30%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
 }
 
-.uso {
+.placa img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.placa h3 {
+    color: #4caf50; /* Mude a cor para a desejada */
+    margin: 10px 0;
+}
+
+.uso-placas {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    gap: 20px;
+    padding: 20px;
 }
 
 .uso-domestico, .uso-empresarial {
-    width: 45%;
-    background-color: #ecf0f1;
+    background-color: white;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 45%;
+}
+
+.uso-domestico img, .uso-empresarial img {
+    max-width: 100%;
+    height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    /* Footer */
-footer {
-    background-color: #2E2C7E;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.footer-logo img {
-    width: 50px;
-    height: 50px;
-}
-
-.footer-logo h2 {
+.uso-domestico h2, .uso-empresarial h2 {
     font-size: 1.8rem;
+    color: black; /* Mude a cor se necessário */
+    margin-bottom: 15px;
 }
 
-.footer-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.contact-item i {
-    font-size: 1.2rem;
-}
-
-.footer-social {
-    text-align: center;
-}
-
-.footer-social span {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.social-icons a {
-    margin: 0 10px;
-    color: white;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
-.social-icons a:hover {
-    color: white;
-}
-
-.footer-menu ul {
-    list-style: none;
-    margin: 20px 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.footer-menu ul li {
-    display: inline;
-}
-
-.footer-menu ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.footer-menu ul li a:hover {
-    color: white;
-}
-
-.footer-copyright {
-    font-size: 0.9rem;
-    margin-top: 20px;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-contact, .footer-social {
-        margin-top: 20px;
-    }
-}
+.uso-domestico p, .uso-empresarial p {
+    font-size: 1rem;
+    color: #555;
 }
