@@ -1,0 +1,176 @@
+<****no html 
+
+---- dps do fechamento da tag nav
+
+   <button onclick="abreFechaMenu()">
+                    <svg id="icone-barras" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                    <svg id="icone-x" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg>
+                </button>
+
+ -antes do fechamento da div do grid
+----- antes de fechar o header
+/***>
+
+
+
+
+<***no css
+
+----- dps do root:
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+---- antes de começar o header
+
+header button {
+    display: none;
+    color: var(--azul-solara);
+
+}
+
+----- Antes da responsividade
+
+
+.menu-fechado {
+    display: none;
+}
+
+
+#icone-barras {
+    display: none;
+}
+
+------ Inicio da responsividade
+
+
+
+@media screen and (max-width: 1300px) {
+    header {
+        position: relative;
+
+        box-shadow: none;
+    }
+
+    .banner { 
+         height: 100vh;
+  
+         background-image: url(img/banner.png);
+        background-repeat: no-repeat;
+   
+        position: relative;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    }
+
+    header button {
+        width: 70px;
+
+        display: unset;
+
+        background: none;
+        border: none;
+
+    }
+
+    header svg {
+        fill: var(--azul-solara);
+
+    }
+
+    button:hover {
+        background-color: unset;
+    }
+
+
+    nav.menu {
+        height: 500px;
+        width: 350px;
+
+        padding: 0px 30px;
+
+
+        flex-direction: column;
+        justify-content: space-around;
+
+        background-color: #2f2d738b;
+
+
+        position: absolute;
+        top: 165px;
+        right: 0px;
+
+        transition: unset;
+
+    }
+
+    .menu a {
+        color: white;
+    }
+}
+ 
+ /***>
+
+
+<**** no javascript 
+
+
+let menu = document.getElementById("menu")
+let iconeBarras = document.getElementById("icone-barras")
+let iconeX = document.getElementById("icone-x")
+
+function abreFechaMenu() {
+    // Menu fechado - tem a classe menu-fechado
+    // Menu aberto - não tem a classe menu-fechado
+
+    // Alterna a classe menu-fechado
+    // menu.classList.toggle("menu-fechado")
+
+  
+    if (menu.classList.contains("menu-fechado")) {
+        // Abrir o menu - remover a classe menu-fechado
+        menu.classList.remove("menu-fechado")
+
+        // Esconder icone barras
+        iconeBarras.style.display = "none"
+
+        // Mostrar o icone do X
+        iconeX.style.display = "inline"
+
+    }
+
+    else {
+        // Fechar o menu - adicionar a classe menu-fechado
+        menu.classList.add("menu-fechado")
+
+        // Esconder icone do X
+        iconeX.style.display = "none"
+
+        // Mostrar o icone barras
+        iconeBarras.style.display = "inline"
+    }
+}
+
+onresize = () => {
+    // Abrir o menu - remover a classe menu-fechado
+    menu.classList.remove("menu-fechado")
+
+    // Esconder icone barras
+    iconeBarras.style.display = "none"
+
+    // Mostrar o icone do X
+    iconeX.style.display = "inline"
+}
+
+/****>
+
