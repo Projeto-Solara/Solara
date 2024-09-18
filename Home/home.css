@@ -117,28 +117,159 @@ header {
     display: flex;
     justify-content: center;
 
-    margin-bottom: 70px;
+    margin-bottom: 80px;
 }
 
-#Beneficios p{
+#Beneficios li{
     font-family: Montserrat;
     font-size: 22px;
 }
 
-
-#Beneficios p b {
+#Beneficios li b {
     color: var(--azul-solara);
 }
 
 #Beneficios {
     display: flex;
     flex-direction: row;
+    align-items: center;
 
     height: 300px;
+    margin-bottom: 20px;
 }
 
 .primeiro-topico p,.ultimo-topico p{
-    width: 800px;
-
     margin-bottom: 20px;
+
+}
+
+.primeiro-topico p{
+    width: 700px;
+}
+
+footer {
+
+    background-color: var(--azul-solara);
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.conteudo {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    border-top: 2px solid white;
+    padding-top: 50px;
+    border-bottom: 2px solid white;
+    padding-bottom: 50px;
+    
+}
+
+.conteudo img {
+    height: 35%;
+    width: 35%;
+}
+
+/*telefone*/
+
+.telefone {
+    display: flex;
+    width: 250px;
+    align-items: center;
+   
+}
+
+.telefone p {
+    font-family: "Montserrat";
+    color: white;
+}
+
+.telefone img {
+    height: 65px;
+    width: 65px;
+    padding-right: 20px;
+}
+
+/*gmail*/
+
+.gmail {
+    display: flex;
+    width: 250px;
+    align-items: center;
+
+}
+
+.gmail p {
+    font-family: "Montserrat";
+    color: white;
+}
+
+.gmail img {
+    height: 65px;
+    width: 65px;
+    padding-right: 20px;
+}
+
+/*Social media*/
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-media p {
+    font-family: "Montserrat";
+    color: white;
+    width: 300px;
+}
+
+.social-media img {
+    height: 40px;
+}
+
+.linha-cima {
+    display: flex;
+    padding-bottom: 70px;
+}
+
+.menu footer {
+    margin-top: 100px;
+}
+
+.links footer {
+    margin-top: 100px;
+    display: flex;
+
+}
+
+.menu-no-footer {
+    margin-top: 130px;
+}
+
+.menu-footer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.cop {
+    padding-left: 160px;
+}
+
+.menu-footer a {
+    font-family: "Montserrat";
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.menu-footer p {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 12px;
 }
