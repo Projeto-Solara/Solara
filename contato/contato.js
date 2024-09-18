@@ -9,7 +9,7 @@ function abreFechaMenu() {
     // Alterna a classe menu-fechado
     // menu.classList.toggle("menu-fechado")
 
-  
+
     if (menu.classList.contains("menu-fechado")) {
         // Abrir o menu - remover a classe menu-fechado
         menu.classList.remove("menu-fechado")
