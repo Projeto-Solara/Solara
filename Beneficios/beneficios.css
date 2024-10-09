@@ -205,3 +205,146 @@ body.card {
     box-shadow: 0 4px 8px var(--verde-solara);
 
 }
+
+
+footer {
+
+    background-color: var(--azul-solara);
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.conteudo {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.471);
+    padding-top: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.471);
+    padding-bottom: 50px;
+    
+}
+
+.conteudo img {
+    height: 35%;
+    width: 35%;
+
+}
+
+/*telefone*/
+
+.telefone {
+    display: flex;
+    width: 250px;
+    align-items: center;
+   
+}
+
+.telefone p {
+    font-family: "Montserrat";
+    color: white;
+}
+
+.telefone img {
+    height: 65px;
+    width: 65px;
+    padding-right: 20px;
+}
+
+/*gmail*/
+
+.gmail {
+    display: flex;
+    width: 250px;
+    align-items: center;
+
+}
+
+.gmail p {
+    font-family: "Montserrat";
+    color: white;
+}
+
+.gmail img {
+    height: 65px;
+    width: 65px;
+    padding-right: 20px;
+}
+
+/*Social media*/
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-media p {
+    font-family: "Montserrat";
+    color: white;
+    width: 200px;
+    display: block;
+}
+
+.social-media a{
+    width: 100px;
+    transition: filter 500ms ease;
+}
+
+.social-media a:hover{
+   filter: drop-shadow(0 0 0.75rem white);
+}
+
+.linha-cima {
+    display: flex;
+    padding-bottom: 60px;
+    justify-content: space-between;
+}
+
+.menu footer {
+    margin-top: 100px;
+}
+
+.links footer {
+    margin-top: 100px;
+    display: flex;
+    
+}
+
+.menu-no-footer {
+    margin-top: 30px;
+}
+
+.menu-footer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.cop {
+    padding-left: 160px;
+}
+
+.menu-footer a {
+    font-family: "Montserrat";
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    text-decoration: underline transparent;
+    transition: text-decoration 500ms ease;
+}
+
+.menu-footer a:hover {
+    text-decoration: underline;
+}
+
+.menu-footer p {
+    color: #ffffff9e;
+    font-family: "Montserrat";
+    font-size: 12px;
+}
