@@ -78,6 +78,14 @@ header img {
     transition: text-decoration 500ms ease;
 }
 
+
+.menu span {
+    color: var(--verde-solara);
+    text-decoration: underline;
+}
+
+
+
 .menu a:hover {
     text-decoration: underline;
     color: var(--verde-solara);
@@ -170,8 +178,9 @@ textarea:focus {
 
 .phone-section {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
+
 
 .ddd-wrapper {
     flex: 1;
@@ -292,7 +301,7 @@ textarea::placeholder {
 footer {
 
     background-color: var(--azul-solara);
-    background-repeat: no-repeat;
+
     height: 500px;
     display: flex;
     justify-content: center;

@@ -1,15 +1,20 @@
 @font-face {
-    font-family: "Cabinet";
-    src: url(fonts/CabinetGrotesk-Variable.ttf);
-
-
+    font-family: "Cabinet Bold";
+    src: url(fonts/CabinetGrotesk-Bold.otf);
 }
 
+@font-face {
+    font-family: "Cabinet Medium";
+    src: url(fonts/CabinetGrotesk-Medium.otf);
+}
 
 :root {
     --verde-solara: #438332;
     --azul-solara: #2f2d73;
+}
 
+html {
+    scroll-behavior: smooth;
 }
 
 * {
@@ -18,18 +23,28 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #f2f2f2;
-}
-
 .container-grid {
     width: 80vw;
     max-width: 1400px;
     margin: 0 auto;
 }
 
+body {
+    background-color: #f2f2f2;
+}
+
+
+
+
+header button {
+    display: none;
+    color: var(--azul-solara);
+
+}
+
 header {
     height: 165px;
+    background-color: white;
 }
 
 header .container-grid {
@@ -53,7 +68,7 @@ header img {
 }
 
 .menu a {
-    font-family: "Cabinet";
+    font-family: "Cabinet Medium";
     font-size: 22px;
     font-weight: 500;
     text-decoration: none;
@@ -63,6 +78,14 @@ header img {
     transition: text-decoration 500ms ease;
 }
 
+
+.menu span {
+    color: var(--verde-solara);
+    text-decoration: underline;
+}
+
+
+
 .menu a:hover {
     text-decoration: underline;
     color: var(--verde-solara);
@@ -70,32 +93,22 @@ header img {
 }
 
 header {
-    color: white; /* Cor do texto */
-    padding: 20px; /* Espaçamento interno */
-    text-align: center; /* Centraliza o texto */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-}
-
-.banner {
-    background: url('img/imagem-produtos1.png') no-repeat center center/cover;
     color: white;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner h1 {
-    font-size: 3rem;
-}
-
-
-
-h1 {
+    /* Cor do texto */
+    padding: 20px;
+    /* Espaçamento interno */
     text-align: center;
-    font-size: 2.5rem;
-    margin-top: 20px;
+    /* Centraliza o texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra */
 }
+
+.conteudo-banner img {
+max-width: 100%;
+}
+
+
+
 
 .tipos-placa-solar {
     text-align: center;
@@ -127,7 +140,8 @@ h1 {
 }
 
 .placa h3 {
-    color: #4caf50; /* Mude a cor para a desejada */
+    color: #4caf50;
+    /* Mude a cor para a desejada */
     margin: 10px 0;
 }
 
@@ -140,7 +154,8 @@ h1 {
     padding: 20px;
 }
 
-.uso-domestico, .uso-empresarial {
+.uso-domestico,
+.uso-empresarial {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -149,19 +164,23 @@ h1 {
     width: 45%;
 }
 
-.uso-domestico img, .uso-empresarial img {
+.uso-domestico img,
+.uso-empresarial img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-.uso-domestico h2, .uso-empresarial h2 {
+.uso-domestico h2,
+.uso-empresarial h2 {
     font-size: 1.8rem;
-    color: black; /* Mude a cor se necessário */
+    color: black;
+    /* Mude a cor se necessário */
     margin-bottom: 15px;
 }
 
-.uso-domestico p, .uso-empresarial p {
+.uso-domestico p,
+.uso-empresarial p {
     font-size: 1rem;
     color: #555;
 }
