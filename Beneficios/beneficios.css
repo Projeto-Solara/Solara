@@ -197,7 +197,9 @@ body.card {
     /* line-height: 1.5; */
 }
 
-
+#beneficiotexto {
+    margin-bottom: 8%;
+}
 
 #beneficiotexto .card {
     background-color: white;
