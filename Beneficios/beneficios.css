@@ -176,6 +176,7 @@ body.card {
 #listabeneficios img {
     margin-top: 70px;
     margin-bottom: 70px;
+    border-radius: 15px;
 }
 
  #listabeneficios .container-grid {
