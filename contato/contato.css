@@ -377,12 +377,18 @@ footer {
 .social-media p {
     font-family: "Montserrat";
     color: white;
-    width: 300px;
+    width: 200px;
+    display: block;
 }
 
-.social-media img {
-    height: 30px;
+.social-media a{
+    width: 100px;
+    transition: filter 500ms ease;
 }
+
+.social-media a:hover{
+   filter: drop-shadow(0 0 0.75rem white);
+   }
 
 .linha-cima {
     display: flex;
